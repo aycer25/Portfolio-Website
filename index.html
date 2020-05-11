@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Verdana", sans-serif;
+  color: #000000;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {     /*Background images that show and change as the user scrolls up and down the website*/
+  position: relative;
+  opacity: 0.90;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-036.jpg");
+  min-height: 550px;
+}
+
+.bgimg-2 {
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2016/11/25/1053229/26874b47c890c97be63a3cfb380882cc.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://krot.info/uploads/posts/2020-01/1580489248_28-p-foni-s-arkhitekturoi-kazani-85.jpg");
+  min-height: 400px;
+}
+
+.title{
+
+	position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h1 {                      /* Title color and font*/
+  letter-spacing: 5px;
+  font: 50px "Lato", sans-serif;
+  color: #111;
+}
+
+h3 {                      /*Section header color and font */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+#section1
+{
+}
+
+#section2
+{
+}
+
+#section3
+{
+}
+
+#section4
+{
+}
+
+#section5
+{
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+#myBtn {                /*The back to top button*/
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.tabbtn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  font: 400 15px/1.8 "Verdana", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Tab buttons at the top of the page */
+.menutop {
+  color: #005CB9;
+}
+
+.menutop:hover {
+  background-color: #2196F3;
+  color: white;              
+}
+
+.downbtn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;                 /* Button text changes to white if mouse pointer hovers over the botton*/
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.downbtn:hover {
+  background-color: RoyalBlue; /*Button also shows a blue button outline if mouse pointer hovers over it.*/
+}
+</style>
+</head>
+
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Back to Top</button>
+
+<div class="main" id="section1">	
+	<div class="bgimg-1">
+ 		 <div class="title">
+        	 <h1 style="text-align:center;"><b>Techworks</b></h1>
+		 <p><i>A simple portfolio website made using HTML/CSS</i></p>
+        	 <p><i>Made by Alex Yuan</i></p>
+         		<a href="#section2"><button class="tabbtn menutop">Overview</button></a>
+         		<a href="#section3"><button class="tabbtn menutop">About Me</button></a>
+         		<a href="#section4"><button class="tabbtn menutop">Projects</button></a>
+         		<a href="#section5"><button class="tabbtn menutop">Contact</button></a>
+ 		 </div>
+         
+	</div>
+</div>
+
+<div class="main" id="section2">
+	<div style="color: #000000;background-color:#c7e9eb;text-align:center;padding:50px 80px;text-align: justify;">
+ 		 <h3 style="text-align:center;">Overview</h3>
+ 		 <p>Welcome to my portfolio website! This is a side project created using HTML/CSS I like to occasionally work on. It serves to not only house my school and extracurricular projects, but also highlight my skill in HTML/CSS. </p>
+         <br><br>
+	</div>
+</div>
+
+<div class="bgimg-2"></div>
+</div>
+
+<div class="main" id="section3">
+	<div style="position:relative;">
+  		<div style="color:#000000;background-color:#c7e9eb;text-align:center;padding:50px 80px;text-align: justify;">
+  		<h3 style="text-align:center;">About the Author</h3>
+  		<p>I'm a graduate from San Jose State University majoring in Professional Technical Writing. My original major was Computer Engineering, but decided to make the switch because I found creating documentation to be much more enjoyable -- not only I get to learn about subject matter, but also help cater towards a specific audience. After all, technical writing is somewhat of a (specialized) customer service job -- you are helping the customer (sometimes companies) how to understand your organization's product!</p>
+        <br><br>
+        <p><b>Hobbies: </b>Exercising, gaming, collecting/building LEGOs, learning new things.</p>
+  </div>
+	</div>
+</div>
+
+<div class="bgimg-3"></div>
+</div>
+
+<div class="main" id="section4">
+	<div style="position:relative;">
+  		<div style="color:#000000;background-color:#c7e9eb;text-align:center;padding:50px 80px;text-align: justify;">
+  		<h3 style="text-align:center;">Projects</h3>
+  		<p>Here you can find various writing projects and works done at San Jose State University.</p>
+  
+  <h2><i>ENGL 108 Prof Technical Writing</i></h2>
+  <a href="Drone FPV Manual.pdf" target="_blank">Drone FPV User Manual</a>
+  <br><br>
+  <a href="KillSwitch Guide.pdf" target="_blank">Revised KillSwitch Manual (In-class)</a>
+  <br><br>
+  <a href="autocorrect manual.pdf" target="_blank">Microsoft Word Autocorrect Manual</a>
+  <br><br>
+  <a href="Proposal.pdf" target="_blank">KidCore Proposal</a>
+  <br><br>
+  
+  
+  <h2><i>ENGL 110 Visual & Document Design</i></h2>
+  <a href="file:///C:/Users/Alex%20Yuan/Documents/SJSU%20TW%20Gamifying%20Website.htm" target="_blank">SJSU TC Gameify Website</a>
+  <br><br>
+  <a href="TCC flyer 2019.pdf" target="_blank">TCC 2019 Flyer</a>
+  <br><br>
+  <a href="Student Spending Infographic.pdf" target="_blank">Student Spending Infographic</a>
+  <br><br>
+  <a href="magazine design.pdf" target="_blank">The Crafter Magazine Project</a>
+  <br><br>
+  <a href="assignment 2.pdf" target="_blank">Phone app/website analysis</a>
+  <br><br>
+  
+  <h2><i>ENGL 129 Intro to Career Writing</i></h2>
+  <a href="feature.pdf" target="_blank">Milk Tea Truck Article</a>
+  <br><br>
+  <a href="review.pdf" target="_blank">Puzzles & Dragons review</a>
+  <br><br>
+  
+  <h2><i>Misc Works</i></h2>
+  <p>Most of the projects in this section are revamps of existing projects shown above.</p>
+  <a href="Bowling Training Manual.pdf" target="_blank">Bowling Center Training Manual Fall 2019</a> (in progress)
+  <br><br>
+  <a href="Drone FPV User Manual 2.0.pdf" target="_blank">Drone FPV User Manual 2.0</a>
+  <br><br>
+  <a href="Vector Image Guide.docx" target="_blank">Vector Image Guide</a>
+  <br><br>
+        
+        
+  </div>
+	</div>
+</div> 
+
+<div class="main" id="section5">
+	<div class="bgimg-1">
+ 		 <div class="caption">
+ 			 <span class="border">Contact</span>
+  		</div>
+	</div>
+</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
